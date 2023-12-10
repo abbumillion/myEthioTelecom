@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyEthioTelcom</string>
+    <string name="voice_dialog_title">Buy Voice Package</string>
+    <string name="data_dialog_title">Buy Data Package</string>
+    <string name="sms_dialog_title">Buy SMS Package</string>
+    <string name="voice_dialog_text">buying voice package </string>
+    <string name="data_dialog_text">buy data package</string>
+    <string name="sms_dialog_text">buy sms package</string>
 </resources>

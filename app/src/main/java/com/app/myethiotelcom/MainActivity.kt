@@ -1,46 +1,38 @@
 package com.app.myethiotelcom
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.app.myethiotelcom.ui.theme.MyEthioTelcomTheme
+import com.app.myethiotelcom.R.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MyEthioTelcomTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
-    }
-}
+        setContentView(layout.first_page)
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyEthioTelcomTheme {
-        Greeting("Android")
+        val voiceButton = findViewById<Button>(id.voiceButton)
+        val dataButton = findViewById<Button>(id.dataButton)
+        val smsButton = findViewById<Button>(id.smsButton)
+
+
+        voiceButton.setOnClickListener { v -> button1Action() }
+        dataButton.setOnClickListener { v -> button2Action() }
+        smsButton.setOnClickListener { v -> button3Action() }
     }
+
+    fun button1Action() {
+        val intent = Intent(this@MainActivity, VoiceActivity::class.java)
+        startActivity(intent)
+    }
+    fun button2Action() {
+        val intent = Intent(this@MainActivity, DataActivity::class.java)
+        startActivity(intent)
+    }
+    fun button3Action() {
+        val intent = Intent(this@MainActivity, SMSActivity::class.java)
+        startActivity(intent)
+    }
+
 }

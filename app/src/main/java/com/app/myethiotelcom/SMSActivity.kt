@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 
-class SMSActivity : ComponentActivity() {
+class SMSPackageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sms_page)
@@ -20,7 +20,7 @@ class SMSActivity : ComponentActivity() {
     }
     // action listener implementation here
     private fun backToMainPage() {
-        val intent = Intent(this@SMSActivity, MainActivity::class.java)
+        val intent = Intent(this@SMSPackageActivity, MainActivity::class.java)
         startActivity(intent)    }
 
     private fun buyVoicePackage() {

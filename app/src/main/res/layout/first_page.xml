@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root"
-    android:padding="12dp"
-    android:layout_margin="6dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_margin="6dp"
+    android:orientation="vertical"
+    android:padding="12dp">
 
     <Button
         android:id="@+id/voiceButton"
@@ -24,4 +24,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SMS" />
+
+    <Button
+        android:id="@+id/cardTransferButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Transfer" />
+
 </LinearLayout>

@@ -2,12 +2,17 @@ package com.app.myethiotelcom
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.core.app.ActivityCompat
 
-class VoiceActivity : ComponentActivity() {
+
+class VoicePackageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.voice_page)
@@ -20,7 +25,7 @@ class VoiceActivity : ComponentActivity() {
     }
     // action listener implementation here
     private fun backToMainPage() {
-        val intent = Intent(this@VoiceActivity, MainActivity::class.java)
+        val intent = Intent(this@VoicePackageActivity, MainActivity::class.java)
         startActivity(intent)    }
 
     private fun buyVoicePackage() {
@@ -48,4 +53,33 @@ class VoiceActivity : ComponentActivity() {
         // Set other dialog properties
         alertDialog.setCancelable(false)
         alertDialog.show()     }
+
+    fun callPhoneNumber() {
+        try {
+            if (Build.VERSION.SDK_INT > 22) {
+                if (ActivityCompat.checkSelfPermission(
+                        this,
+                        TELEPHONY_SERVICE
+                    ) != PackageManager.PERMISSION_GRANTED
+                ) {
+                    ActivityCompat.requestPermissions(
+                        this@VoicePackageActivity,
+                        arrayOf(TELEPHONY_SERVICE),
+                        101
+                    )
+                    return
+                }
+                val callIntent = Intent(Intent.ACTION_CALL)
+               // callIntent.setData(Uri.parse("tel:" + txtPhone.getText().toString()))
+                startActivity(callIntent)
+            } else {
+                val callIntent = Intent(Intent.ACTION_CALL)
+              //  callIntent.setData(Uri.parse("tel:" + txtPhone.getText().toString()))
+                startActivity(callIntent)
+            }
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+        }
+    }
+
 }

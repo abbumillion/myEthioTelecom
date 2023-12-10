@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 
-class DataActivity : ComponentActivity() {
+class DataPackageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.data_page)
@@ -20,7 +20,7 @@ class DataActivity : ComponentActivity() {
     }
     // action listener implementation here
     private fun backToMainPage() {
-        val intent = Intent(this@DataActivity, MainActivity::class.java)
+        val intent = Intent(this@DataPackageActivity, MainActivity::class.java)
         startActivity(intent)    }
 
     private fun buyVoicePackage() {

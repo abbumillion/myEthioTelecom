@@ -29,9 +29,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".VoicePackageActivity"/>
-        <activity android:name=".DataPackageActivity"/>
-        <activity android:name=".SMSPackageActivity"/>
+        <activity android:name=".packageactivity.VoicePackageActivity" />
+        <activity android:name=".packageactivity.DataPackageActivity" />
+        <activity android:name=".packageactivity.SMSPackageActivity" />
 
     </application>
 

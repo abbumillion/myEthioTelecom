@@ -1,18 +1,19 @@
-package com.app.myethiotelcom
+package com.app.myethiotelcom.packageactivity
 
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import com.app.myethiotelcom.MainActivity
+import com.app.myethiotelcom.R
 
-class DataPackageActivity : ComponentActivity() {
+class SMSPackageActivity : PackageActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.data_page)
-        val buyVoicePackageButton = findViewById<Button>(R.id.buydatapackage)
-        val backFromVoicePackage = findViewById<Button>(R.id.backfromdatapackage)
+        setContentView(R.layout.sms_page)
+        val buyVoicePackageButton = findViewById<Button>(R.id.buysmspackage)
+        val backFromVoicePackage = findViewById<Button>(R.id.backfromsmspackage)
 
         // action listener registration here
         buyVoicePackageButton.setOnClickListener { v -> buyVoicePackage() }
@@ -20,15 +21,15 @@ class DataPackageActivity : ComponentActivity() {
     }
     // action listener implementation here
     private fun backToMainPage() {
-        val intent = Intent(this@DataPackageActivity, MainActivity::class.java)
+        val intent = Intent(this@SMSPackageActivity, MainActivity::class.java)
         startActivity(intent)    }
 
     private fun buyVoicePackage() {
         val builder = AlertDialog.Builder(this)
         //set title for alert dialog
-        builder.setTitle(R.string.data_dialog_title)
+        builder.setTitle(R.string.sms_dialog_title)
         //set message for alert dialog
-        builder.setMessage(R.string.data_dialog_text)
+        builder.setMessage(R.string.sms_dialog_text)
         builder.setIcon(android.R.drawable.ic_dialog_alert)
 
         //performing positive action

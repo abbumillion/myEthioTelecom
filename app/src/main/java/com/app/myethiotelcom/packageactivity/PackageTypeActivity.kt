@@ -1,9 +1,7 @@
 package com.app.myethiotelcom.packageactivity
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import com.app.myethiotelcom.MainActivity
 import com.app.myethiotelcom.R
 
 class PackageTypeActivity : PackageActivity() {
@@ -13,9 +11,10 @@ class PackageTypeActivity : PackageActivity() {
         val forYouButton = findViewById<Button>(R.id.forYou)
         val giftButton = findViewById<Button>(R.id.gift)
         // action listener registration here
+
         forYouButton.setOnClickListener { packageType() }
         giftButton.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+//            startActivity()
         }
     }
 }

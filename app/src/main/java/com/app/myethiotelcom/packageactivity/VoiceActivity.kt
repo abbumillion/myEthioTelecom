@@ -11,7 +11,7 @@ class VoicePackageActivity : PackageActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.voice_page)
-        val buyVoicePackageButton = findViewById<Button>(R.id.buyvoicepackage)
+        val buyVoicePackageButton = findViewById<Button>(R.id.dailyVoicePackage)
         val backFromVoicePackage = findViewById<Button>(R.id.backfromvoicepackage)
         // action listener registration here
         buyVoicePackageButton.setOnClickListener { packageType() }

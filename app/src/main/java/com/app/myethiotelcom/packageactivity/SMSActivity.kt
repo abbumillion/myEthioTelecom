@@ -12,7 +12,7 @@ class SMSPackageActivity : PackageActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sms_page)
-        val buyVoicePackageButton = findViewById<Button>(R.id.buysmspackage)
+        val buyVoicePackageButton = findViewById<Button>(R.id.dailySMSPackage)
         val backFromVoicePackage = findViewById<Button>(R.id.backfromsmspackage)
 
         // action listener registration here

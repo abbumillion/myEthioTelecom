@@ -12,7 +12,7 @@ class DataPackageActivity : PackageActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.data_page)
-        val buyVoicePackageButton = findViewById<Button>(R.id.buydatapackage)
+        val buyVoicePackageButton = findViewById<Button>(R.id.voiceButton)
         val backFromVoicePackage = findViewById<Button>(R.id.backfromdatapackage)
 
         // action listener registration here

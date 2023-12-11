@@ -1,2 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="daily_mobile_voice_package_3birr">15 Min + 3 SMS +15 Min Bonus / Birr. 3</string>
+    <string name="daily_mobile_voice_package_5birr">25 Min + 5 SMS +25 Min Bonus / Birr. 5</string>
+    <string name="daily_mobile_voice_package_10birr">50 Min + 10 SMS +50 Min Bonus / Birr.10</string>
+
+    <string name="weekly_mobile_voice_package_15birr">75 Min + 15 SMS +75 Min Bonus/ Birr.15</string>
+    <string name="weekly_mobile_voice_package_20birr">110 Min + 20 SMS +110Min Bonus / Birr.20</string>
+    <string name="weekly_mobile_voice_package_25birr">140 Min + 25 SMS +140 Min Bonus/ Birr.25</string>
+
+    <string name="monthly_mobile_voice_package_35birr">125 Min + 35 SMS +125 Min bonus / Birr 35</string>
+    <string name="monthly_mobile_voice_package_50birr">210 Min + 50 SMS +210 Min bonus / Birr 50</string>
+    <string name="monthly_mobile_voice_package_95birr">5400 Min +1GB +100 SMS +400 Min bonus / Birr 95</string>
+    <string name="monthly_mobile_voice_package_120birr">500 Min + 1GB+120 SMS +500 Min bonus / Birr 120</string>
+    <string name="monthly_mobile_voice_package_195birr">1400 Min + 2GB +195 SMS +1400 Min bonus / Birr195</string>
+    <string name="monthly_mobile_voice_package_380birr">22000 Min + 380 SMS +2000 Min bonus / Birr 380</string>
+
+
+    <string name="night_voice_package_3birr">60 Min + 3 SMS / Birr 3</string>
+    <string name="night_voice_package_6birr">140 Min + 6 SMS / Birr 6</string>
+
+
+    <string name="daily_mobile_data_package_3birr">50 MB +50 MB Bonus / Birr 3</string>
+    <string name="daily_mobile_data_package_5birr">100 MB + 100 MB Bonus/ Birr 5</string>
+    <string name="daily_mobile_data_package_12birr">250 MB + 250 MB Bonus/ Birr 12</string>
+    <string name="daily_mobile_data_package_25birr">600 MB +600 MB Bonus/ Birr 25</string>
+
+
+    <string name="weekly_mobile_data_package_24birr">375 MB / Birr 24</string>
+    <string name="weekly_mobile_data_package_38birr">600 MB / Birr 38</string>
+    <string name="weekly_mobile_data_package_49birr">1 GB / Birr 49</string>
+
+    <string name="monthly_mobile_data_package_35birr">500 MB/ Birr 35</string>
+    <string name="monthly_mobile_data_package_50birr">1 GB/ Birr 50</string>
+    <string name="monthly_mobile_data_package_100birr">2 GB/ Birr 100</string>
+    <string name="monthly_mobile_data_package_175birr">4 GB/ Birr 175</string>
+
+
+    <string name="monthly_mobile_data_package_379birr">10 GB/ Birr 379</string>
+    <string name="monthly_mobile_data_package_549birr">20 GB/ Birr 549</string>
+    <string name="monthly_mobile_data_package_799birr">50 GB/ Birr 799</string>
+    <string name="monthly_mobile_data_package_849birr">100 GB + Unlimited SMS/ Birr 849</string>
+
+
+    <string name="night_mobile_data_package_35birr">70 MB/ Birr 3</string>
+    <string name="night_mobile_data_package_50birr">160 MB / Birr 5</string>
+    <string name="night_mobile_data_package_100birr">300 MB/ Birr 7</string>
+
+</resources>

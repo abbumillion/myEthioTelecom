@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/buyvoicepackage"
+        android:id="@+id/dailyVoicePackage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="buy voice package" />
+        android:text="daily voice package" />
+
+
+    <Button
+        android:id="@+id/weeklyVoicePackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="weekly voice package" />
+
+    <Button
+        android:id="@+id/monthlyVoicePackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="monthly voice package" />
 
     <Button
         android:id="@+id/backfromvoicepackage"

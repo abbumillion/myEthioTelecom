@@ -2,9 +2,10 @@ package com.app.myethiotelcom.packageactivity
 
 import android.os.Bundle
 import android.widget.Button
+import androidx.activity.ComponentActivity
 import com.app.myethiotelcom.R
 
-class PackageTypeActivity : PackageActivity() {
+class PackageTypeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.package_type)
@@ -12,7 +13,7 @@ class PackageTypeActivity : PackageActivity() {
         val giftButton = findViewById<Button>(R.id.gift)
         // action listener registration here
 
-        forYouButton.setOnClickListener { packageType() }
+//        forYouButton.setOnClickListener { packageType() }
         giftButton.setOnClickListener {
 //            startActivity()
         }

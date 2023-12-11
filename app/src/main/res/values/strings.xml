@@ -10,9 +10,22 @@
     <string name="voice">buy voice package</string>
     <string name="data">buy data package</string>
     <string name="sms">buy sms package</string>
+
+    <string name="daily_voice">daily voice package</string>
+    <string name="weekly_voice">weekly voice package</string>
+    <string name="monthly_voice">monthly package</string>
+
+    <string name="daily_data">daily data package</string>
+    <string name="weekly_data">weekly data package</string>
+    <string name="monthly_data">monthly data package</string>
+
+    <string name="daily_sms">daily sms package</string>
+    <string name="weekly_sms">weekly sms package</string>
+    <string name="monthly_sms">monthly sms package</string>
+
     <string name="card_transfer">transfer card</string>
-    <string name="unlimited">buy sms package</string>
+    <string name="unlimited">unlimited</string>
     <string name="about">about</string>
     <string name="back">back</string>
-    <string name="sms_dialog_text">buy sms package</string>
+    <string name="sms_dialog_text">buying sms package</string>
 </resources>

@@ -42,8 +42,8 @@
     <string name="monthly_mobile_data_package_849birr">100 GB + Unlimited SMS/ Birr 849</string>
 
 
-    <string name="night_mobile_data_package_35birr">70 MB/ Birr 3</string>
-    <string name="night_mobile_data_package_50birr">160 MB / Birr 5</string>
-    <string name="night_mobile_data_package_100birr">300 MB/ Birr 7</string>
+    <string name="night_mobile_data_package_3birr">70 MB/ Birr 3</string>
+    <string name="night_mobile_data_package_5birr">160 MB / Birr 5</string>
+    <string name="night_mobile_data_package_7birr">300 MB/ Birr 7</string>
 
 </resources>

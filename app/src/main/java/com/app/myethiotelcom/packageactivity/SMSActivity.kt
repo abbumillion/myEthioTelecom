@@ -5,10 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.ComponentActivity
 import com.app.myethiotelcom.MainActivity
 import com.app.myethiotelcom.R
 
-class SMSPackageActivity : PackageActivity() {
+class SMSPackageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sms_page)

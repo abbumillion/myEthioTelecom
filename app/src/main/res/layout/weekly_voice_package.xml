@@ -6,32 +6,26 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/weekly15voicebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/weekly_mobile_voice_package_15birr" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/weekly20birrvoicebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/weekly_mobile_voice_package_20birr" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/weekly25birrvoicebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/weekly_mobile_voice_package_25birr" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/backfromweeklyvoicebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button26"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/back" />
 </LinearLayout>
